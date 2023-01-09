@@ -1,0 +1,30 @@
+@import "reset";
+@import "vars";
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+
+    body {
+        display: grid;
+        grid-template-rows: 0.18fr 0.9fr;
+        widows: 100vw;
+        height: 100vh;
+
+        header {
+            display: grid;
+            grid-template-columns: 0.25fr 0.75fr;
+
+            section:first-of-type {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            section:last-of-type {
+                border-bottom: 1px solid black;
+                border-left: 1px solid black;
+            }
+        }
+    }
+}
