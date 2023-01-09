@@ -5,6 +5,18 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 
+    .hidden {
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .close {
+        display: none;
+    }
+
     body {
         display: grid;
         grid-template-rows: 0.18fr 0.9fr;
@@ -14,16 +26,78 @@ html {
         header {
             display: grid;
             grid-template-columns: 0.25fr 0.75fr;
+            
+            span {
+                font-size: 3rem;
+            }
 
             section:first-of-type {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-            
+
             section:last-of-type {
                 border-bottom: 1px solid black;
                 border-left: 1px solid black;
+            }
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 0.25fr 0.75fr;
+
+            aside {
+
+                nav:first-of-type {
+                    margin-top: 95px;
+                }
+
+                nav {
+                    margin-left: 15px;
+                    margin-bottom: 15px;
+
+                    h2 {
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                    }
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+
+                    ul {
+
+                        li:first-of-type {
+                            margin-top: 15px;
+                        }
+
+                        li:last-of-type {
+                            margin-bottom: 20px;
+                        }
+
+                        li {
+                            margin-bottom: 15px;
+                            font-size: 1.2rem;
+
+                            span {
+                                font-size: 1.5rem;
+                                margin-left: 10px;
+                            }
+
+                            a {
+                                color: black;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section {
+                border-left: 1px solid black;
+
             }
         }
     }
